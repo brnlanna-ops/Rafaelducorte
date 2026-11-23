@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barbearia Rael Du Corte – Vespasiano, MG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF3F8; --text:#12161C; --muted:#4A5666; --card:#FFFFFF; --line:#C9D4E0;
+  --sky:#3E9BE0; --pink:#E8479A; --orange:#F5822B; --yellow:#FFC933; --green:#2FB36B; --purple:#7A4FD1;
+  --wa:#1FA855;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#12161C;--text:#EEF3F8;--muted:#A5B2C2;--card:#1B222B;--line:#2B3542}
+}
+:root[data-theme="dark"]{--bg:#12161C;--text:#EEF3F8;--muted:#A5B2C2;--card:#1B222B;--line:#2B3542}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Work Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55;font-size:17px}
+h1,h2,h3{font-family:Bungee,Impact,"Arial Black",sans-serif;font-weight:400;line-height:1.05;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+
+.hero{background:linear-gradient(#2F86CC,#74BFF0);color:#fff;position:relative;overflow:hidden;padding:56px 22px 0}
+.hero-in{max-width:760px;margin:0 auto;position:relative;z-index:2}
+.hero p.tag{margin:0 0 14px;font-weight:600;font-size:1rem;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.hero h1{font-size:clamp(2.6rem,12vw,5.2rem);color:#fff;text-shadow:0 4px 0 #12161C;letter-spacing:.01em}
+.hero .sub{margin:18px 0 26px;font-size:1.1rem;max-width:30ch;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:999px;font-weight:600;text-decoration:none;font-size:1.02rem;border:2px solid transparent}
+.btn.wa{background:var(--wa);color:#fff}
+.btn.ghost{background:rgba(18,22,28,.82);color:#fff}
+.skyline{display:flex;align-items:flex-end;justify-content:center;gap:3px;margin:36px -10px 0;height:150px;position:relative;z-index:1}
+.skyline i{display:block;flex:1 1 0;max-width:46px;border-radius:2px 2px 0 0;position:relative}
+.skyline i::after{content:"";position:absolute;left:22%;top:14%;width:26%;height:16%;background:rgba(255,255,255,.55)}
+
+main{max-width:760px;margin:0 auto;padding:0 22px}
+section{padding:48px 0 0}
+h2{font-size:1.7rem;margin-bottom:14px}
+.lead{color:var(--muted);margin:0;max-width:52ch}
+
+.rating{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:-28px;position:relative;z-index:3;box-shadow:0 8px 24px rgba(18,22,28,.12)}
+.rating b{font-family:Bungee,Impact,sans-serif;font-weight:400;font-size:2.4rem;line-height:1}
+.rating .stars{color:var(--yellow);letter-spacing:2px;font-size:1.15rem}
+.rating span.s{display:block;color:var(--muted);font-size:.95rem}
+
+.cuts{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px}
+.cuts li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.cuts li::before{content:"";flex:none;width:12px;height:36px;border-radius:3px;background:var(--c)}
+.cuts strong{display:block;font-weight:600}
+.cuts span{color:var(--muted);font-size:.96rem}
+
+.info{display:grid;gap:12px;margin-top:18px}
+.row{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.row small{display:block;color:var(--muted);font-size:.88rem}
+.row a{font-weight:600}
+.cta{margin:48px 0 0;background:#12161C;color:#fff;border-radius:18px;padding:30px 24px;text-align:left}
+.cta h2{color:#fff;margin-bottom:10px}
+.cta p{margin:0 0 20px;color:#C9D4E0}
+footer{max-width:760px;margin:0 auto;padding:30px 22px 40px;color:var(--muted);font-size:.9rem}
+@media (min-width:640px){.cuts{grid-template-columns:1fr 1fr}.info{grid-template-columns:1fr 1fr}.skyline{height:190px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-in">
+    <p class="tag">Barbearia em Vespasiano, MG</p>
+    <h1>Rael<br>Du Corte</h1>
+    <p class="sub">Degradê, platinado e freestyle com acabamento de verdade.</p>
+    <div class="btns">
+      <a class="btn wa" href="https://wa.me/5531973062807?text=Ol%C3%A1%2C%20quero%20agendar%20um%20corte%20na%20Barbearia%20Rael%20Du%20Corte" target="_blank" rel="noopener">Agendar no WhatsApp</a>
+      <a class="btn ghost" href="https://www.instagram.com/raelducort" target="_blank" rel="noopener">Ver cortes no Instagram</a>
+    </div>
+  </div>
+  <div class="skyline" id="sky" aria-hidden="true"></div>
+</header>
+
+<main>
+  <div class="rating" role="group" aria-label="Avaliação no Google">
+    <b>5,0</b>
+    <div><div class="stars" aria-hidden="true">★★★★★</div><span class="s">60 avaliações no Google</span></div>
+  </div>
+
+  <section>
+    <h2>O que a gente faz</h2>
+    <p class="lead">Do corte clássico ao desenho na régua. Chega, senta e sai com o visual que você queria.</p>
+    <ul class="cuts">
+      <li style="--c:var(--sky)"><div><strong>Degradê</strong><span>Baixo, médio ou alto, com acabamento limpo.</span></div></li>
+      <li style="--c:var(--yellow)"><div><strong>Platinado e luzes</strong><span>Descoloração e cor com cuidado no cabelo.</span></div></li>
+      <li style="--c:var(--pink)"><div><strong>Freestyle e desenhos</strong><span>Riscos e artes feitas na máquina e na navalha.</span></div></li>
+      <li style="--c:var(--green)"><div><strong>Tranças e cortes infantis</strong><span>Para os pequenos também.</span></div></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Onde estamos</h2>
+    <div class="info">
+      <div class="row"><small>Endereço</small>
+        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Melo+Franco+15+Jardim+da+Gl%C3%B3ria+Vespasiano+MG" target="_blank" rel="noopener">Rua Melo Franco, 15<br>Jardim da Glória, Vespasiano – MG<br>CEP 33200-000</a></div>
+      <div class="row"><small>Telefone e WhatsApp</small><a href="tel:+5531973062807">(31) 97306-2807</a></div>
+      <div class="row"><small>Instagram</small><a href="https://www.instagram.com/raelducort" target="_blank" rel="noopener">@raelducort</a></div>
+      <div class="row"><small>Horário</small>Abre às 14h. Confirme os dias pelo WhatsApp.</div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Garanta seu horário</h2>
+    <p>Chame no WhatsApp, diga o corte que quer e combine o horário.</p>
+    <a class="btn wa" href="https://wa.me/5531973062807?text=Ol%C3%A1%2C%20quero%20agendar%20um%20corte%20na%20Barbearia%20Rael%20Du%20Corte" target="_blank" rel="noopener">Agendar no WhatsApp</a>
+  </div>
+</main>
+
+<footer>Barbearia Rael Du Corte · Vespasiano, MG</footer>
+
+<script>
+(function(){
+  var cols=["#E8479A","#F5822B","#FFC933","#2FB36B","#7A4FD1","#E8479A","#3E9BE0","#F5822B","#FFC933","#2FB36B"];
+  var h=[60,95,75,120,85,110,70,100,80,115,65,90,105,72,98,84,118,68];
+  var el=document.getElementById("sky"),s="";
+  for(var i=0;i<h.length;i++){s+='<i style="height:'+h[i]+'%;background:'+cols[i%cols.length]+'"></i>';}
+  el.innerHTML=s;
+})();
+</script>
+</body>
+</html>
